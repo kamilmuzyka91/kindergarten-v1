@@ -1,6 +1,6 @@
 import React from "react";
 import SignInPage from "../SignIn";
-import akacjoweLogo from "../../assets/akacjoweLogo.png";
+import akacjoweLogo from "../../Assets/akacjoweLogo.png";
 
 const Landing = () => (
   <section className="landingPage">
