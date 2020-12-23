@@ -1,0 +1,30 @@
+.btn_save_message {
+  padding: 15px;
+  background: rgb(238, 255, 0);
+}
+
+.btn_reset_message {
+  padding: 15px;
+  background: rgb(144, 224, 13);
+}
+
+.btn_edit_message {
+  padding: 15px;
+  background: rgb(35, 219, 164);
+}
+
+.btn_remove_message {
+  padding: 15px;
+  background: rgb(178, 61, 207);
+}
+
+.user_message {
+  border: 2px solid grey;
+  color: white;
+
+  .user_name {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-weight: bolder;
+  }
+}

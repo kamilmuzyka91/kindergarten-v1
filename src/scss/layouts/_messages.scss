@@ -1,0 +1,32 @@
+.chat_title {
+  color: rgb(6, 110, 124);
+  font-size: 40px;
+}
+
+.send_message {
+  padding: 20px;
+  background: yellowgreen;
+}
+
+.input_message {
+  background: rgb(188, 235, 95);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: larger;
+  color: white;
+}
+
+.btn_show_older_message {
+  padding: 10px;
+  background: rgb(75, 61, 197);
+}
+
+.load_older_message {
+  color: red;
+  font-weight: bolder;
+}
+
+.form_chatBox {
+  border: 2px solid black;
+}

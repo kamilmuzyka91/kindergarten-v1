@@ -1,0 +1,51 @@
+.signIn__form {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    width: 25rem;
+  }
+  .input__name {
+    text-align: left;
+    margin-top: 1rem;
+    color: $form-color;
+    font-family: $primary-font;
+    @include tablet {
+      width: 30rem;
+    }
+  }
+  .input__label {
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    & {
+      background: #fff;
+      color: $form-color;
+      font-family: $primary-font;
+    }
+  }
+  .send__btn {
+    font-family: $primary-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: $form-color;
+    color: #000;
+    border-radius: 15px;
+    padding: 0.6rem 4rem;
+    margin: 15px 0;
+    border: none;
+    @include tablet {
+      border-radius: 10px;
+      padding: 1rem 4rem;
+    }
+    @include desktop {
+      cursor: pointer;
+      padding: 1rem 4rem;
+      border-radius: 10px;
+      &:hover {
+        box-shadow: 0px 10px 13px -7px #10aded,
+          0px 0px 19px 10px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}

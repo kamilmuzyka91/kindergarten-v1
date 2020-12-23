@@ -1,0 +1,23 @@
+.landingPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .logo {
+    display: flex;
+    align-self: center;
+    width: 70%;
+    height: 50%;
+    margin-top: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px 1px rgba(255, 255, 255, 0.75);
+    @include tablet {
+      width: 50%;
+      height: 10%;
+    }
+    @include desktop {
+      width: 15%;
+      height: 10%;
+    }
+  }
+}

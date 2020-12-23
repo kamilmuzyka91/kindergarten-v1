@@ -10,10 +10,8 @@ import * as ROUTES from "../../constants/routes";
 const SignInPage = () => (
   <div className="signIn__form">
     <SignInForm />
-    <div className="signIn__option">
-      <PasswordForgetLink />
-      <SignUpLink />
-    </div>
+    <PasswordForgetLink />
+    <SignUpLink />
   </div>
 );
 
@@ -56,11 +54,11 @@ class SignInFormBase extends Component {
     const isInvalid = password === "" || email === "";
 
     return (
-      <form className="signIn__form__input" onSubmit={this.onSubmit}>
-        <p className="signIn__form__title">Akacjowe przedszkole</p>
-        <p className="signIn__input__name"> E-mail:</p>
+      <form className="signIn__form" onSubmit={this.onSubmit}>
+
+        <p className="input__name"> E-mail:</p>
         <input
-          className="signIn__form__input__label"
+          className="input__label"
           name="email"
           value={email}
           onChange={this.onChange}
@@ -68,9 +66,9 @@ class SignInFormBase extends Component {
           placeholder="akacjowe@przedszkole.pl"
         />
         <br />
-        <p className="signIn__input__name"> Hasło:</p>
+        <p className="input__name"> Hasło:</p>
         <input
-          className="signIn__form__input__label"
+          className="input__label"
           name="password"
           value={password}
           onChange={this.onChange}
@@ -79,7 +77,7 @@ class SignInFormBase extends Component {
         />
         <br />
         <button
-          className="signIn__send__btn"
+          className="send__btn"
           disabled={isInvalid}
           type="submit"
         >
