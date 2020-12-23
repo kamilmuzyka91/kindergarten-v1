@@ -1,9 +1,12 @@
-import React from 'react';
- 
+import React from "react";
+import SignInPage from "../SignIn";
+import akacjoweLogo from "../../assets/akacjoweLogo.png";
+
 const Landing = () => (
-  <div>
-    <h1>App</h1>
-  </div>
+  <section className="landingPage">
+    <img className="logo" src={akacjoweLogo} alt="logo" />
+    <SignInPage />
+  </section>
 );
- 
+
 export default Landing;
