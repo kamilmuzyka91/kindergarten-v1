@@ -7,8 +7,11 @@ import { PasswordForgetLink } from "../PasswordForget";
 import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constants/routes";
 
+import akacjoweLogo from "../../Assets/akacjoweLogo.png";
+
 const SignInPage = () => (
-  <div className="signIn__form">
+  <div className="signIn__container">
+    <img className="logo" src={akacjoweLogo} alt="Akacjowe przedszkole" />
     <SignInForm />
     <PasswordForgetLink />
     <SignUpLink />
@@ -54,9 +57,9 @@ class SignInFormBase extends Component {
     const isInvalid = password === "" || email === "";
 
     return (
-      <form className="signIn__form" onSubmit={this.onSubmit}>
-
-        <p className="input__name"> E-mail:</p>
+     
+      <form className="form" onSubmit={this.onSubmit}>
+        {/* <p className="input__name"> E-mail:</p> */}
         <input
           className="input__label"
           name="email"
@@ -66,7 +69,7 @@ class SignInFormBase extends Component {
           placeholder="akacjowe@przedszkole.pl"
         />
         <br />
-        <p className="input__name"> Hasło:</p>
+        {/* <p className="input__name"> Hasło:</p> */}
         <input
           className="input__label"
           name="password"
@@ -76,11 +79,7 @@ class SignInFormBase extends Component {
           placeholder="Hasło"
         />
         <br />
-        <button
-          className="send__btn"
-          disabled={isInvalid}
-          type="submit"
-        >
+        <button className="send__btn" disabled={isInvalid} type="submit">
           Zaloguj
         </button>
         {error && <p>{error.message}</p>}
