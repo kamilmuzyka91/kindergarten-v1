@@ -1,0 +1,26 @@
+$max-mobile-width: 557px;
+$min-tablet-width: 558px;
+$max-tablet-width: 1024px;
+$desktop-width: 1025px;
+@mixin mobile {
+  @media (max-width: $max-mobile-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin error {
+  color: red;
+  font-size: 15px;
+}
