@@ -1,8 +1,22 @@
-.signIn__container {
+.passwd-forget {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  .forget_title {
+    font-family: $primary-font;
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+    @include tablet {
+      margin: 2rem;
+    }
+    @include desktop {
+        font-size: 1.5rem;
+        margin: 4rem;
+      }
+  }
 
   .form {
     display: flex;
@@ -25,9 +39,6 @@
         width: 70%;
       }
     }
-    @include desktop {
-      width: 30rem;
-    }
 
     .input__label {
       border: none;
@@ -41,8 +52,12 @@
         margin: 2rem;
         width: 150%;
       }
+      @include desktop {
+        margin: 2rem;
+        width: 150%;
+      }
     }
-    .send__btn {
+    .reset__btn {
       font-family: $primary-font;
       text-transform: uppercase;
       font-weight: bold;
@@ -64,6 +79,7 @@
         padding: 1rem 4rem;
         margin-bottom: 3rem;
         border-radius: 10px;
+        width: 150%;
         &:hover {
           box-shadow: 0px 10px 13px -7px #10aded,
             0px 0px 19px 10px rgba(0, 0, 0, 0.25);

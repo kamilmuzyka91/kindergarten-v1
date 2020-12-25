@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constants/routes";
 
+import akacjoweLogo from "../../Assets/akacjoweLogo.png";
+
 const PasswordForgetPage = () => (
-  <>
-    <h1 className="forget_title">Zapomniane hasło</h1>
+  <section className="passwd-forget">
+    <img className="logo" src={akacjoweLogo} alt="Akacjowe przedszkole" />
+    <h3 className="forget_title">Aby zresetować hasło wpisz adres e-mail i sprawdz skrzynkę pocztową.</h3>
     <PasswordForgetForm />
-  </>
+  </section>
 );
 
 const INITIAL_STATE = {
@@ -48,17 +51,17 @@ class PasswordForgetFormBase extends Component {
     const isInvalid = email === "";
 
     return (
-      <form className="forget_form" onSubmit={this.onSubmit}>
-        Zapomniałem hasła:
+      <form className="form" onSubmit={this.onSubmit}>
+        
         <input
-          className="forget_input"
+          className="input__label"
           name="email"
           value={this.state.email}
           onChange={this.onChange}
           type="text"
-          placeholder="jan@kowalski.pl"
+          placeholder="akacjowe@przedszkole.pl"
         />
-        <button className="reset_btn" disabled={isInvalid} type="submit">
+        <button className="reset__btn" disabled={isInvalid} type="submit">
           Resetuj hasło
         </button>
         {error && <p>{error.message}</p>}
