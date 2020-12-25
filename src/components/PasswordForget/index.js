@@ -8,7 +8,7 @@ import akacjoweLogo from "../../Assets/akacjoweLogo.png";
 
 const PasswordForgetPage = () => (
   <section className="passwd-forget">
-    <img className="logo" src={akacjoweLogo} alt="Akacjowe przedszkole" />
+    <img className="logo" src={akacjoweLogo} alt="Akacjowe przedszkole logo" />
     <h3 className="forget_title">Aby zresetować hasło wpisz adres e-mail i sprawdz skrzynkę pocztową.</h3>
     <PasswordForgetForm />
   </section>
