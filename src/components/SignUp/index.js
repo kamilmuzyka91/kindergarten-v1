@@ -5,11 +5,14 @@ import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constants/routes";
 import * as ROLES from "../../constants/roles";
 
+import akacjoweLogo from "../../Assets/akacjoweLogo.png";
+
 const SignUpPage = () => (
-  <div>
-    <h1>Dołącz do Akacjowego Przedszkola</h1>
+  <section className="signUp__container">
+    <img className="logo" src={akacjoweLogo} alt="Akacjowe przedszkole" />
+    <h1 className="signUp__title">Dołącz do Akacjowego Przedszkola</h1>
     <SignUpForm />
-  </div>
+  </section>
 );
 
 const INITIAL_STATE = {
@@ -86,15 +89,17 @@ class SignUpFormBase extends Component {
       username === "";
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form className="form" onSubmit={this.onSubmit}>
         <input
+          className="input__label"
           name="username"
           value={username}
           onChange={this.onChange}
           type="text"
-          placeholder="Jan Kowalski"
+          placeholder="Imię"
         />
         <input
+          className="input__label"
           name="email"
           value={email}
           onChange={this.onChange}
@@ -102,6 +107,7 @@ class SignUpFormBase extends Component {
           placeholder="akacjowe@przedszkole.pl"
         />
         <input
+          className="input__label"
           name="passwordOne"
           value={passwordOne}
           onChange={this.onChange}
@@ -109,6 +115,7 @@ class SignUpFormBase extends Component {
           placeholder="Hasło"
         />
         <input
+          className="input__label"
           name="passwordTwo"
           value={passwordTwo}
           onChange={this.onChange}
@@ -126,7 +133,7 @@ class SignUpFormBase extends Component {
           />
         </label>
 
-        <button disabled={isInvalid} type="submit">
+        <button className="register__btn" disabled={isInvalid} type="submit">
           Rejestracja
         </button>
 
