@@ -20,25 +20,39 @@ const Navigation = ({ authUser }) => (
 );
 
 const NavigationAuth = ({ authUser }) => (
-  <ul>
-    <li>
-      <Link to={ROUTES.HOME}>Strona główna</Link>
-    </li>
-    {!!authUser.roles[ROLES.ADMIN] && (
-      <li>
-        <Link to={ROUTES.ADMIN}>Panel administracyjny</Link>
-      </li>
-    )}
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Profil</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.CHAT}>Czat</Link>
-    </li>
-    <li>
-      <SignOutButton />
-    </li>
-  </ul>
+  <div className="page_header_container">
+    <header className="page_header">
+      <div className="container">
+        <div class="header_logo">
+          <h1 class="header_title">
+            <i class="fas fa-user-graduate"></i>
+          </h1>
+          <p class="logo_text">Akacjowe Przedszkole</p>
+        </div>
+        <nav className="page_nav">
+          <ul className="page_nav_list">
+            <li>
+              <Link to={ROUTES.HOME}>Strona główna</Link>
+            </li>
+            {!!authUser.roles[ROLES.ADMIN] && (
+              <li>
+                <Link to={ROUTES.ADMIN}>Panel administracyjny</Link>
+              </li>
+            )}
+            <li>
+              <Link to={ROUTES.ACCOUNT}>Profil</Link>
+            </li>
+            <li>
+              <Link to={ROUTES.CHAT}>Czat</Link>
+            </li>
+            <li>
+              <SignOutButton />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
 );
 
 export default Navigation;

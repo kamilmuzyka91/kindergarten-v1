@@ -1,0 +1,43 @@
+.page_header_container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  .page_header .container {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header_logo {
+      display: flex;
+      align-items: center;
+      font-family: $primary-font;
+      .header_title {
+        color: $kindergarten-color;
+        margin-right: 1rem;
+      }
+      .logo_text {
+        color: $form-color;
+        font-weight: bold;
+      }
+    }
+    .page_nav_list {
+      display: flex;
+      align-items: center;
+      li {
+        margin-left: 40px;
+      }
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #8e9696;
+        font-weight: 600;
+        border-bottom: 4px solid transparent;
+        letter-spacing: 0.1653rem;
+        &:hover {
+          color: #213131;
+          border-color: $kindergarten-color;
+        }
+      }
+    }
+  }
+}
