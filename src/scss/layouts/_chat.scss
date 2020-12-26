@@ -1,9 +1,9 @@
-.chatBox {
+.chatBox_container {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 5px solid red;
   border-radius: 90px;
   background: rgb(25, 82, 7);
-  // sekcja chatBox w komponencie chat
+  width: 50%;
 }
