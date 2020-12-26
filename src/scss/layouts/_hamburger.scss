@@ -1,0 +1,24 @@
+.burger_container {
+  display: inline-flex;
+  margin-top: 100px;
+  .icon {
+    display: block;
+  }
+  @include tablet {
+    display: block;
+    .icon {
+      display: block;
+    }
+  }
+  @include desktop {
+    display: none;
+  }
+
+  .page_header_display {
+    color: red;
+    display: block;
+  }
+  .page_header_none {
+    display: none;
+  }
+}

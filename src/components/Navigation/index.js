@@ -6,6 +6,8 @@ import * as ROLES from "../../constants/roles";
 import SignOutButton from "../SignOut";
 import { AuthUserContext } from "../Session";
 
+import Hamburger from "./Hamburger";
+
 const Navigation = ({ authUser }) => (
   <AuthUserContext.Consumer>
     {(authUser) =>
@@ -23,6 +25,8 @@ const NavigationAuth = ({ authUser }) => (
   <div className="page_header_container">
     <header className="page_header">
       <div className="container">
+        <Hamburger />
+        
         <div class="header_logo">
           <h1 class="header_title">
             <i class="fas fa-user-graduate"></i>
