@@ -1,0 +1,16 @@
+.sign_out_btn {
+  font-family: $primary-font;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  color: #8e9696;
+  padding: 0.3rem 1rem;
+  border: none;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  &:hover {
+    color: red;
+    border-bottom: 4px solid red;
+  }
+}
