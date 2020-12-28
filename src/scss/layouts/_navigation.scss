@@ -1,0 +1,172 @@
+.header {
+  height: 30px;
+  display: flex;
+  .menuToggle {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    z-index: 1;
+    margin: 10px; // odpycha dolne sekcje
+    height: 30px; // ustawia wysokość dla seksji nawigacji mobilnej
+  }
+
+  .menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  .menuToggle input {
+    display: block;
+    /*   powierzchnia klikania na checkbox */
+    // width: 40px;
+    // height: 32px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    // top: -7px;
+    // left: -5px;
+    top: -15px;
+    left: -10px;
+    cursor: pointer;
+
+    /*   schowaj checkbox i ustaw go za hamburgerem */
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+  }
+
+  /* ikona hamburgera */
+  .menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 10;
+    background: #cdcdcd;
+    border-radius: 3px;
+    /*   do ukrycia checkbox'a */
+    z-index: 1;
+    transform-origin: 4px 0px;
+  }
+  /* animacja ikony hamburgera */
+  .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  .menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  .menu {
+    // style dla listy menu
+    position: absolute;
+
+    width: 100vw;
+    margin: -110px 0 0 0;
+    padding: 10px;
+    padding-top: 100px;
+    background: yellow;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(0, -100%);
+    transition: transform 0.5s linear; 
+
+    //moje
+    position: relative;
+    top: 0;
+    left: -10px;
+
+    text-align: center;
+  }
+
+  /* style listy */
+  .menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  /*
+ * And let's slide it in from the left
+ */
+  .menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  .teacher_icon {
+    font-size: 40px;
+    color: red;
+  }
+}
+// desktop menu
+
+//   .page_header_container {
+//     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+//     .page_header .container {
+//       height: 5rem;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+
+//       .header_logo {
+//         display: flex;
+//         align-items: center;
+//         font-family: $primary-font;
+//         .header_title {
+//           color: $kindergarten-color;
+//           margin-right: 1rem;
+//         }
+//         .logo_text {
+//           color: $form-color;
+//           font-weight: bold;
+//         }
+//       }
+//       .page_nav_list {
+//         display: flex;
+//         align-items: center;
+//         li {
+//           margin-left: 40px;
+//         }
+//         a {
+//           text-transform: uppercase;
+//           text-decoration: none;
+//           color: #8e9696;
+//           font-weight: 600;
+//           border-bottom: 4px solid transparent;
+//           letter-spacing: 0.1653rem;
+//           &:hover {
+//             color: #213131;
+//             border-color: $kindergarten-color;
+//           }
+//         }
+//       }
+//     }
+//     @include mobile {
+//       display: none;
+//     }
+//     @include tablet {
+//       display: none;
+//     }
+//   }
+// }
