@@ -49,7 +49,7 @@ class AdminPage extends Component {
         <br />
         {loading && (
           <div>
-            <i class="loading fas fa-spinner fa-spin"></i>
+            <i className="loading fas fa-spinner fa-spin"></i>
           </div>
         )}
         <h2>Lista użytkowników:</h2>
