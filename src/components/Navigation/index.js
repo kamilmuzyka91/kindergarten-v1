@@ -22,15 +22,15 @@ const Navigation = ({ authUser }) => (
 const NavigationAuth = ({ authUser }) => (
   <header className="header">
     <input className="menu-btn" type="checkbox" id="menu-btn" />
-    <label className="menu-icon" for="menu-btn">
-      <span class="navicon"></span>
+    <label className="menu-icon" htmlFor="menu-btn">
+      <span className="navicon"></span>
     </label>
 
     <ul className="menu">
       <div className="header-logo">
         <i className="fas fa-user-graduate"></i>
       </div>
-      <p class="logo_title">Akacjowe Przedszkole</p>
+      <p className="logo_title">Akacjowe Przedszkole</p>
       <li>
         <Link to={ROUTES.HOME}>Strona główna</Link>
       </li>
