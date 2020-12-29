@@ -15,11 +15,11 @@ const AccountPage = () => (
     {(authUser) => (
       <>
         <Navigation />
-        <h1>
+        <p>
           Zalogowany: {authUser.username} {authUser.email}
-        </h1>
+        </p>
         <PasswordForgetForm />
-        <PasswordChangeForm />
+       <PasswordChangeForm/>
       </>
     )}
   </AuthUserContext.Consumer>
