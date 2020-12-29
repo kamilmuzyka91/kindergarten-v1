@@ -44,16 +44,18 @@ class AdminPage extends Component {
     return (
       <>
         <Navigation />
-        <br />
-        <h1>Panel administracyjny</h1>
-        <br />
-        {loading && (
-          <div>
-            <i className="loading fas fa-spinner fa-spin"></i>
-          </div>
-        )}
-        <h2>Lista użytkowników:</h2>
-        <UserList users={users} />
+        <section className="admin">
+          <br />
+          <h1>Panel administracyjny</h1>
+          <br />
+          {loading && (
+            <div>
+              <i className="loading fas fa-spinner fa-spin"></i>
+            </div>
+          )}
+          <h2>Lista użytkowników:</h2>
+          <UserList users={users} />
+        </section>
       </>
     );
   }

@@ -7,10 +7,17 @@ import Navigation from "../Navigation";
 const HomePage = () => (
   <>
     <Navigation />
-
     <div className="home">
       <h1>wdvwevwevwevwev</h1>
-      <p className="lorem"> lorem</p>
+      <p className="lorem"> lorem 1</p>
+      <h1>wdvwevwevwevwev</h1>
+      <p className="lorem"> lorem 2</p>
+      <h1>wdvwevwevwevwev</h1>
+      <p className="lorem"> lorem 3</p>
+      <h1>wdvwevwevwevwev</h1>
+      <p className="lorem"> lorem 4</p>
+      <h1>wdvwevwevwevwev</h1>
+      <p className="lorem"> lorem 5</p>
     </div>
   </>
 );
