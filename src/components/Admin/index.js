@@ -42,15 +42,21 @@ class AdminPage extends Component {
   render() {
     const { users, loading } = this.state;
     return (
-      <div>
+      <>
         <Navigation />
-        <br /> <br />
-        <h1>Panel administracyjny</h1>
-        <br /> <br />
-        {loading && <div>Loading ...</div>}
-        <h2>Lista użytkowników:</h2>
-        <UserList users={users} />
-      </div>
+        <section className="admin">
+          <br />
+          <h1>Panel administracyjny</h1>
+          <br />
+          {loading && (
+            <div>
+              <i className="loading fas fa-spinner fa-spin"></i>
+            </div>
+          )}
+          <h2>Lista użytkowników:</h2>
+          <UserList users={users} />
+        </section>
+      </>
     );
   }
 }

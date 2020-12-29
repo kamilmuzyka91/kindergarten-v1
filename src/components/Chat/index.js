@@ -29,16 +29,13 @@ class Chat extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Navigation />
-        <hr />
-        <h1>Komponent czat</h1>
-
-        <div className="chatBox">
+        <div className="chatBox_container">
           <Messages users={this.state.users} />
         </div>
         <hr />
-      </div>
+      </>
     );
   }
 }
