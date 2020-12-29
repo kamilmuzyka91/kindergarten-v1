@@ -13,14 +13,14 @@ import Navigation from "../Navigation";
 const AccountPage = () => (
   <AuthUserContext.Consumer>
     {(authUser) => (
-      <div>
+      <>
         <Navigation />
         <h1>
           Zalogowany: {authUser.username} {authUser.email}
         </h1>
         <PasswordForgetForm />
         <PasswordChangeForm />
-      </div>
+      </>
     )}
   </AuthUserContext.Consumer>
 );

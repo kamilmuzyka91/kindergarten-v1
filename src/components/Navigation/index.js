@@ -21,37 +21,34 @@ const Navigation = ({ authUser }) => (
 
 const NavigationAuth = ({ authUser }) => (
   <header className="header">
-    <div className="hamburger_container">
-      <div className="menuToggle">
-        <input type="checkbox" />
+    <div className="mobile">
+      <input className="menu-btn" type="checkbox" id="menu-btn" />
+      <label className="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
 
-        <span></span>
-        <span></span>
-        <span></span>
-   
       <ul className="menu">
-        <div className="header_logo">
-          <i className="teacher_icon fas fa-user-graduate"></i>
+        <div className="header-logo">
+          <i className="fas fa-user-graduate"></i>
         </div>
-        <Link to={ROUTES.HOME}>
-          <li>Strona główna</li>
-        </Link>
+        <li>
+          <Link to={ROUTES.HOME}>Strona główna</Link>
+        </li>
         {!!authUser.roles[ROLES.ADMIN] && (
-          <Link to={ROUTES.ADMIN}>
-            <li>Panel administracyjny</li>
-          </Link>
+          <li>
+            <Link to={ROUTES.ADMIN}>Panel administracyjny</Link>
+          </li>
         )}
-        <Link to={ROUTES.ACCOUNT}>
-          <li>Profil</li>
-        </Link>
-        <Link to={ROUTES.CHAT}>
-          <li>Czat</li>
-        </Link>
+        <li>
+          <Link to={ROUTES.ACCOUNT}>Profil</Link>
+        </li>
+        <li>
+          <Link to={ROUTES.CHAT}>Czat</Link>
+        </li>
         <li>
           <SignOutButton />
         </li>
       </ul>
-    </div>
     </div>
   </header>
 );
