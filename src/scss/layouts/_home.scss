@@ -4,33 +4,47 @@
   font-family: $primary-font;
   margin-top: 5rem;
 
+  @include desktop {
+    margin: 0;
+  }
+
   .lerning {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
+    .lerning_tiles {
+      @include desktop {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
     article {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
       margin: 5px;
-      background: map-get($article, article-bg);
+      background: map-get($article, articzle-bg);
 
       @include desktop {
-        background: red;
+        background: map-get($article, article-bg);
+        margin: 1.25rem;
       }
 
       .tiles_title {
         font-size: 2rem;
-        color: map-get($article, article-title);
+        color: #000;
         padding: 0.5rem;
       }
     }
   }
 
   .tiles_logo {
-    padding: 1rem;
+    padding-bottom: 1rem;
     width: 500px;
+    cursor: pointer;
   }
 }

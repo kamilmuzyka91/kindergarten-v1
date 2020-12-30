@@ -3,17 +3,15 @@
   text-transform: uppercase;
   font-weight: bold;
   color: $mobile-link;
-  margin-bottom: 1rem;
   padding: 0.3rem 1rem;
   border: 1px solid $mobile-link;
   border-radius: 15px;
+  margin-bottom: 1.5rem;
   cursor: pointer;
 
   @include desktop {
-    display: contents;
-    color: $desktop-link;
-    border: none;
-
+    display: block;
+    margin-bottom: 0;
     &:hover {
       color: red;
     }

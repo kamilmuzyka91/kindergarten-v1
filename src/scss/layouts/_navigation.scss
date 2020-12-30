@@ -69,19 +69,20 @@
     font-weight: 600;
     color: $mobile-link;
     text-transform: uppercase;
-    letter-spacing: 0.1653rem;
+    letter-spacing: 0.1121rem;
     text-decoration: none;
 
     border-bottom: 4px solid transparent;
     padding: 1rem;
 
     @include desktop {
+      text-transform: none;
       color: $desktop-link;
       cursor: pointer;
 
       &:hover {
         color: $desktop-hover;
-        border-bottom: 4px solid $kindergarten-color;
+        background: $desktop-hover-bg;
       }
     }
   }

@@ -12,7 +12,7 @@ import czytanki from "../../Assets/czytanki.jpg";
 const HomePage = () => (
   <>
     <Navigation />
-    <div className="home ">
+    <div className="home">
       <section className="lerning ">
         <article className="lerning_tiles">
           <h1 className="tiles_title">Zabawy</h1>
