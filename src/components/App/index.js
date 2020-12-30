@@ -5,6 +5,10 @@ import SignInPage from "../SignIn";
 import SignUpPage from "../SignUp";
 import PasswordForgetPage from "../PasswordForget";
 import HomePage from "../Home";
+import Fun from "../Home-fun";
+import Songs from "../Home-songs";
+import Works from "../Home-works";
+import Readings from "../Home-readings";
 import AccountPage from "../Account";
 import AdminPage from "../Admin";
 import Chat from "../Chat";
@@ -23,6 +27,10 @@ const App = () => (
 
       {/* withAuthentication */}
       <Route exact path={ROUTES.HOME} component={HomePage} />
+      <Route exact path={ROUTES.FUN} component={Fun} />
+      <Route exact path={ROUTES.SONGS} component={Songs} />
+      <Route exact path={ROUTES.READINGS} component={Readings} />
+      <Route exact path={ROUTES.WORKS} component={Works} />
       <Route path={ROUTES.ADMIN} component={AdminPage} />
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
       <Route path={ROUTES.CHAT} component={Chat} />

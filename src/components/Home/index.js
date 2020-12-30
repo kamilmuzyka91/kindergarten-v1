@@ -16,25 +16,25 @@ const HomePage = () => (
       <section className="lerning ">
         <article className="lerning_tiles">
           <h1 className="tiles_title">Zabawy</h1>
-          <Link to={ROUTES.ACCOUNT}>
+          <Link to={ROUTES.FUN}>
             <img className="tiles_logo" src={zabawy} alt="Akacjowe zabawy" />
           </Link>
         </article>
         <article className="lerning_tiles">
           <h1 className="tiles_title">Piosenki</h1>
-          <Link to={ROUTES.ACCOUNT}>
+          <Link to={ROUTES.SONGS}>
             <img className="tiles_logo" src={piosenki} alt="Akacjowe piosenki" />
           </Link>
         </article>
         <article className="lerning_tiles">
           <h1 className="tiles_title">Zadania</h1>
-          <Link to={ROUTES.ACCOUNT}>
+          <Link to={ROUTES.WORKS}>
             <img className="tiles_logo" src={zadania} alt="Akacjowe zadania" />
           </Link>
         </article>
         <article className="lerning_tiles">
           <h1 className="tiles_title">Czytanki</h1>
-          <Link to={ROUTES.ACCOUNT}>
+          <Link to={ROUTES.READINGS}>
             <img className="tiles_logo" src={czytanki} alt="Akacjowe czytanki" />
           </Link>
         </article>

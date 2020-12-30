@@ -1,14 +1,16 @@
 // auth nav
 export const HOME = "/home";
+export const FUN = "/zabawy";
+export const SONGS = "/piosenki";
+export const WORKS = "/zadania";
+export const READINGS = "/czytanki";
+
 export const ADMIN = "/admin";
 export const ACCOUNT = "/account";
 export const CHAT = "/chat";
 
 // non auth nav
 export const LANDING = "/";
-export const ABOUT_US = "./akacjowe";
-export const CONTACT = "./kontakt";
-export const SERVICE = "./serwis";
 
 // authorization
 export const SIGN_IN = "/signin";
