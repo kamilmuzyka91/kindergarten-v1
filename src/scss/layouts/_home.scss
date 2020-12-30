@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   font-family: $primary-font;
-  margin-top: 1rem;
+  margin-top: 5rem;
 
   .lerning {
     display: flex;
@@ -17,15 +17,20 @@
       margin: 5px;
       background: map-get($article, article-bg);
 
+      @include desktop {
+        background: red;
+      }
 
       .tiles_title {
+        font-size: 2rem;
         color: map-get($article, article-title);
+        padding: 0.5rem;
       }
     }
   }
 
-  .logo {
-    padding: 20px;
-    width: 400px;
+  .tiles_logo {
+    padding: 1rem;
+    width: 500px;
   }
 }

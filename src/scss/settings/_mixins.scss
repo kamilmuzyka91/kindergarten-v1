@@ -2,6 +2,7 @@ $max-mobile-width: 557px;
 $min-tablet-width: 558px;
 $max-tablet-width: 1024px;
 $desktop-width: 1025px;
+
 @mixin mobile {
   @media (max-width: $max-mobile-width) {
     @content;
@@ -10,6 +11,7 @@ $desktop-width: 1025px;
 
 @mixin tablet {
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    margint-top: 5rem;
     @content;
   }
 }
