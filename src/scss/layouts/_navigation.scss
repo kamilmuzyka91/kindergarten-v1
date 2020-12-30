@@ -1,4 +1,6 @@
 .header {
+  position: fixed;
+  top: 0;
   background: $mobile-header;
   width: 100%;
   z-index: 3;
