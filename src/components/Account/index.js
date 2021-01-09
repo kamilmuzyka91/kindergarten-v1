@@ -2,6 +2,8 @@ import React from "react";
 
 import { PasswordForgetForm } from "../PasswordForget";
 import PasswordChangeForm from "../PasswordChange";
+
+
 import {
   AuthUserContext,
   withAuthorization,
@@ -18,6 +20,7 @@ const AccountPage = () => (
         <h1>
           Zalogowany: {authUser.username} {authUser.email}
         </h1>
+
         <PasswordForgetForm />
         <PasswordChangeForm />
       </>

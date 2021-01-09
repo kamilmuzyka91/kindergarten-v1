@@ -45,7 +45,6 @@ const NavigationAuth = ({ authUser }) => (
       <li>
         <Link to={ROUTES.CHAT}>Czat</Link>
       </li>
-
       <li>
         <SignOutButton />
       </li>

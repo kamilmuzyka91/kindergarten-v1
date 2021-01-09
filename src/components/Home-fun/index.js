@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Navigation from "../Navigation";
+// import TodoList from "../TodoList";
 
 class Fun extends Component {
   render() {
@@ -8,13 +9,12 @@ class Fun extends Component {
       <>
         <Navigation />
         <section className="have_fun">
-          <h1 className="title">Tytuł zabawy</h1>
+          <h1 className="title">Lista zabaw dla dzieci</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-            distinctio numquam, nostrum sunt dicta provident cumque nesciunt
-            perferendis tempore ad voluptate deserunt porro, dolorem, voluptates
-            necessitatibus totam aliquam ex error.
+            Podziel się zabawami dla dzieci aby ułatwić pracę wszystkim w
+            zespole.
           </p>
+          {/* <TodoList /> */}
         </section>
       </>
     );
