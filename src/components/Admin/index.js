@@ -18,7 +18,7 @@ class AdminPage extends Component {
   }
 
   componentDidMount() {
-    // pobranie userów z interfejsu API realtime database do zarządzania nimi
+    // pobranie userów z interfejsu API realtime database
     this.setState({ loading: true });
 
     this.props.firebase.users().on("value", (snapshot) => {
@@ -44,17 +44,22 @@ class AdminPage extends Component {
     return (
       <>
         <Navigation />
-        <section className="admin">
-          <br />
-          <h1>Panel administracyjny</h1>
-          <br />
-          {loading && (
-            <div>
-              <i className="loading fas fa-spinner fa-spin"></i>
+        <section className="admin__panel">
+          <h1 className="section__title">
+            Panel administratora
+            <div className="loading">
+              {loading && (
+                <div>
+                  <i className="fas fa-spinner fa-spin"></i>
+                </div>
+              )}
             </div>
-          )}
-          <h2>Lista użytkowników:</h2>
-          <UserList users={users} />
+          </h1>
+
+          <p className="user__list">Lista użytkowników:</p>
+          <div className="user__list__item">
+            <UserList users={users} />
+          </div>
         </section>
       </>
     );
@@ -63,22 +68,23 @@ class AdminPage extends Component {
 
 const UserList = ({ users }) => (
   <>
-    <ul>
+    <ul className="users__list">
       {users.map((user) => (
-        <li key={user.uid}>
-          <span>
-            <strong>ID:</strong> {user.uid}
-          </span>
+        <li className="users__value" key={user.uid}>
+          <p className="users__item">
+            <strong>Użytkownik :</strong> {user.username}
+          </p>
 
-          <span>
+          <p className="users__item">
             <strong>E-Mail :</strong> {user.email}
-          </span>
+          </p>
 
-          <span>
-            <strong>Username:</strong> {user.username}
-          </span>
-          <hr />
+          <p className="users__item">
+            <strong>Identyfikator :</strong> {user.uid}
+          </p>
+          <hr/>
         </li>
+        
       ))}
     </ul>
   </>

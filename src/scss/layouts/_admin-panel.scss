@@ -1,6 +1,22 @@
-.loading {
-  // time keeper
-  color: $form-color;
-  width: 30px;
-  height: 30px;
+.admin__panel {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 5rem;
+
+  @include desktop {
+    @include center;
+  }
+  .section__title {
+    align-self: center;
+    & {
+      color: $form-color;
+    }
+  }
+
+  .user__list {
+    font-family: $primary-font;
+    font-weight: bold;
+    margin: 1.5rem;
+  }
 }

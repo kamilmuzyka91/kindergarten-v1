@@ -13,7 +13,7 @@ const AccountPage = () => (
     {(authUser) => (
       <>
         <Navigation />
-        <div className="container">
+        <section className="user__profile ">
           <div className="profile__container">
             <img
               className="profile__avatar"
@@ -22,11 +22,11 @@ const AccountPage = () => (
             />
             <div className="profile__data">
               <p className="profile__user">Użytkownik: {authUser.username}</p>
-              <p className="profile__user">E-mail: {authUser.email}</p> <br/>
+              <p className="profile__user">E-mail: {authUser.email}</p> <br />
               <PasswordChangeForm />
             </div>
           </div>
-        </div>
+        </section>
       </>
     )}
   </AuthUserContext.Consumer>

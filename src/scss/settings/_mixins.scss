@@ -26,3 +26,8 @@ $desktop-width: 1025px;
   color: red;
   font-size: 15px;
 }
+
+@mixin center {
+  margin: 0 auto;
+  width: 1200px;
+}

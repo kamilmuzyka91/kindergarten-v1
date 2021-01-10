@@ -1,0 +1,8 @@
+.users__list {
+  display: flex;
+  flex-direction: column;
+
+  .users__value {
+    list-style: none;
+  }
+}
