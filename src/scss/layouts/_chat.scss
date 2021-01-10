@@ -1,13 +1,21 @@
-.chatBox_container {
+.chat__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid red;
-  background: rgb(25, 82, 7);
-  margin-top: 5rem;
+  border: 1px dotted #000;
+
+
   max-width: 550px;
-  
+
   @include desktop {
     @include center;
+    max-width: 900px;
+  }
+  .chat {
+    margin-top: 2rem;
+    @include desktop {
+      @include center;
+      max-width: 100%;
+    }
   }
 }

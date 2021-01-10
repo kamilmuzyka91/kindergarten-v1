@@ -27,18 +27,19 @@
 
     .input_message {
       font-size: larger;
-      color: $kindergarten-color;
-      background: #fff;
+      color: $dark-grey;
+      background: #bbbbbb;
       border: none;
-      padding: 3px;
+      padding: 5px;
       margin-right: 3px;
       width: 100%;
+      text-align: center;
     }
 
     .btn__send__message {
       padding: 5px;
       border: none;
-      background: yellowgreen;
+      background: #10aded;
     }
   }
 }

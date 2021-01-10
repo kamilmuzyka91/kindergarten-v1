@@ -2,17 +2,30 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  max-width: 550px;
+  // max-width: 950px;
   & {
     background: $desktop-hover-bg;
   }
   .message__item {
     display: flex;
-    max-width: 550px;
+    flex-direction: column;
     text-align: left;
+    max-width: 550px;
+    @include desktop {
+      max-width: 1100%;
+    }
     .user__item {
       // tutaj wstrzyknąć mixina kolorującego tło na przemian
       background: rgb(255, 255, 255);
+      & {
+        color: $dark-grey;
+      }
+      .user_name {
+        color: $form-color;
+        font-weight: bolder;
+        margin-right: 0.5rem;
+        padding-bottom: 40px;
+      }
     }
   }
 }

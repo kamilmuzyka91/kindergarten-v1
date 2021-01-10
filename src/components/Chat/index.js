@@ -31,7 +31,7 @@ class Chat extends Component {
     return (
       <>
         <Navigation />
-        <div className="chatBox_container">
+        <div className="chat__container">
           <Messages users={this.state.users} />
         </div>
         <hr />

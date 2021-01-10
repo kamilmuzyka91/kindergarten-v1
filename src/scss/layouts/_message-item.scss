@@ -19,19 +19,10 @@
 
 .input__message {
   display: flex;
-  .user_message {
-    border: 2px solid grey;
-    color: $dark-grey;
-
-    .user_name {
-      color: $form-color;
-      font-weight: bolder;
+  .user__item {
+    .user_message {
+      border: 2px solid grey;
+      color: $dark-grey;
     }
   }
-}
-
-.message__item {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
 }
