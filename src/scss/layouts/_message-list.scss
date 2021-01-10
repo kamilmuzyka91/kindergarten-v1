@@ -7,6 +7,12 @@
     background: $desktop-hover-bg;
   }
   .message__item {
+    display: flex;
     max-width: 550px;
+    text-align: left;
+    .user__item {
+      // tutaj wstrzyknąć mixina kolorującego tło na przemian
+      background: rgb(255, 255, 255);
+    }
   }
 }

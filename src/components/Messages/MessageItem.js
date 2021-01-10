@@ -44,37 +44,39 @@ class MessageItem extends Component {
           <span className="user_message">
             <strong className="user_name">
               {message.user.username || message.user.userId}
-            </strong>{" "}
-            {message.text} {message.editedAt && <span>(Edited)</span>}
+            </strong>
+            {message.text} {message.editedAt && <span>(Edytowany)</span>}
           </span>
         )}
 
         {editMode ? (
           <span>
-            <button className="btn_save_message" onClick={this.onSaveEditText}>
-              Zapisz
-            </button>
-            <button
-              className="btn_reset_message"
+            <i
+              className="save-icon icon far fa-save"
+              onClick={this.onSaveEditText}
+              title="zapisz"
+            ></i>
+            <i
+              className="reset-icon icon fas fa-sync"
               onClick={this.onToggleEditMode}
-            >
-              Resetuj
-            </button>
+              title="resetuj"
+            ></i>
           </span>
         ) : (
-          <button className="btn_edit_message" onClick={this.onToggleEditMode}>
-            Edytuj
-          </button>
+          <i
+            className="edit-icon icon far fa-edit"
+            alt="edit"
+            onClick={this.onToggleEditMode}
+            title="edytuj"
+          ></i>
         )}
 
         {!editMode && (
-          <button
-            className="btn_remove_message"
-            type="button"
+          <i
+            class="delate-icon icon far fa-trash-alt"
             onClick={() => onRemoveMessage(message.uid)}
-          >
-            Usuń
-          </button>
+            title="usuń"
+          ></i>
         )}
       </>
     );

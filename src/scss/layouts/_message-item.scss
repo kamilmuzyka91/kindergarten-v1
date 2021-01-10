@@ -1,25 +1,24 @@
-.btn_save_message {
-  padding: 15px;
-  background: rgb(238, 255, 0);
+.icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
 }
 
-.btn_reset_message {
-  padding: 15px;
-  background: rgb(144, 224, 13);
+.save-icon {
+  color: #96c120;
 }
-
-.btn_edit_message {
-  padding: 15px;
-  background: rgb(35, 219, 164);
+.reset-icon {
+  color: #298de0;
 }
-
-.btn_remove_message {
-  padding: 15px;
-  background: rgb(178, 61, 207);
+.edit-icon {
+  color: #147af2;
+}
+.delate-icon {
+  color: #ed473d;
 }
 
 .input__message {
-  
+  display: flex;
   .user_message {
     border: 2px solid grey;
     color: $dark-grey;
@@ -29,4 +28,10 @@
       font-weight: bolder;
     }
   }
+}
+
+.message__item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
