@@ -48,36 +48,37 @@ class MessageItem extends Component {
             {message.text} {message.editedAt && <span>(Edytowany)</span>}
           </span>
         )}
-
-        {editMode ? (
-          <span>
+        <p>
+          {editMode ? (
+            <span>
+              <i
+                className="save-icon icon far fa-save"
+                onClick={this.onSaveEditText}
+                title="zapisz"
+              ></i>
+              <i
+                className="reset-icon icon fas fa-sync"
+                onClick={this.onToggleEditMode}
+                title="resetuj"
+              ></i>
+            </span>
+          ) : (
             <i
-              className="save-icon icon far fa-save"
-              onClick={this.onSaveEditText}
-              title="zapisz"
-            ></i>
-            <i
-              className="reset-icon icon fas fa-sync"
+              className="edit-icon icon far fa-edit"
+              alt="edit"
               onClick={this.onToggleEditMode}
-              title="resetuj"
+              title="edytuj"
             ></i>
-          </span>
-        ) : (
-          <i
-            className="edit-icon icon far fa-edit"
-            alt="edit"
-            onClick={this.onToggleEditMode}
-            title="edytuj"
-          ></i>
-        )}
+          )}
 
-        {!editMode && (
-          <i
-            class="delate-icon icon far fa-trash-alt"
-            onClick={() => onRemoveMessage(message.uid)}
-            title="usuń"
-          ></i>
-        )}
+          {!editMode && (
+            <i
+              class="delate-icon icon far fa-trash-alt"
+              onClick={() => onRemoveMessage(message.uid)}
+              title="usuń"
+            ></i>
+          )}
+        </p>
       </>
     );
   }
