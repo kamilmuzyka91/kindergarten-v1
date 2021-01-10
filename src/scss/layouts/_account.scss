@@ -1,0 +1,21 @@
+.profile__container {
+  display: flex;
+  margin-top: 4rem;
+  background: $kindergarten-color;
+  padding: 1.5rem;
+
+  .profile__avatar {
+    border-radius: 50%;
+    padding: 1.5rem;
+  }
+
+  .profile__data {
+    align-self: center;
+
+    .profile__user {
+      font-family: $primary-font;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+  }
+}
