@@ -16,6 +16,7 @@ export const LANDING = "/";
 export const SIGN_IN = "/signin";
 export const SIGN_UP = "/signup";
 export const PASSWORD_FORGET = "/pw-forget";
+export const CALLENDAR = "/kalendarz";
 
 //other
 export const PAGE_NOT_FOUND = "*";

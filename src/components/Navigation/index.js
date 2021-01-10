@@ -46,6 +46,9 @@ const NavigationAuth = ({ authUser }) => (
         <Link to={ROUTES.CHAT}>Czat</Link>
       </li>
       <li>
+        <Link to={ROUTES.CALLENDAR}>Kalendarz</Link>
+      </li>
+      <li>
         <SignOutButton />
       </li>
     </ul>

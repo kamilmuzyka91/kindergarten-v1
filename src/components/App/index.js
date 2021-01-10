@@ -12,29 +12,29 @@ import Readings from "../Home-readings";
 import AccountPage from "../Account";
 import AdminPage from "../Admin";
 import Chat from "../Chat";
+import Callendar from "../Callendar";
 
 import * as ROUTES from "../../constants/routes";
 import { withAuthentication } from "../Session";
 
 const App = () => (
   <Router>
-    <>
-      {/* authorization routes */}
-      <Route exact path={ROUTES.LANDING} component={LandingPage} />
-      <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
-      <Route path={ROUTES.SIGN_IN} component={SignInPage} />
-      <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
+    {/* authorization routes */}
+    <Route exact path={ROUTES.LANDING} component={LandingPage} />
+    <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
+    <Route path={ROUTES.SIGN_IN} component={SignInPage} />
+    <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
 
-      {/* withAuthentication */}
-      <Route exact path={ROUTES.HOME} component={HomePage} />
-      <Route exact path={ROUTES.FUN} component={Fun} />
-      <Route exact path={ROUTES.SONGS} component={Songs} />
-      <Route exact path={ROUTES.READINGS} component={Readings} />
-      <Route exact path={ROUTES.WORKS} component={Works} />
-      <Route path={ROUTES.ADMIN} component={AdminPage} />
-      <Route path={ROUTES.ACCOUNT} component={AccountPage} />
-      <Route path={ROUTES.CHAT} component={Chat} />
-    </>
+    {/* withAuthentication */}
+    <Route exact path={ROUTES.HOME} component={HomePage} />
+    <Route exact path={ROUTES.FUN} component={Fun} />
+    <Route exact path={ROUTES.SONGS} component={Songs} />
+    <Route exact path={ROUTES.READINGS} component={Readings} />
+    <Route exact path={ROUTES.WORKS} component={Works} />
+    <Route path={ROUTES.ADMIN} component={AdminPage} />
+    <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+    <Route path={ROUTES.CHAT} component={Chat} />
+    <Route path={ROUTES.CALLENDAR} component={Callendar} />
   </Router>
 );
 

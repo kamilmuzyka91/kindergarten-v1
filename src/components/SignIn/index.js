@@ -59,7 +59,6 @@ class SignInFormBase extends Component {
     return (
      
       <form className="form" onSubmit={this.onSubmit}>
-        {/* <p className="input__name"> E-mail:</p> */}
         <input
           className="input__label"
           name="email"
