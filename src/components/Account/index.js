@@ -1,9 +1,5 @@
 import React from "react";
-
-import { PasswordForgetForm } from "../PasswordForget";
 import PasswordChangeForm from "../PasswordChange";
-
-
 import {
   AuthUserContext,
   withAuthorization,
@@ -17,12 +13,20 @@ const AccountPage = () => (
     {(authUser) => (
       <>
         <Navigation />
-        <h1>
-          Zalogowany: {authUser.username} {authUser.email}
-        </h1>
-
-        <PasswordForgetForm />
-        <PasswordChangeForm />
+        <div className="container">
+          <div className="profile__container">
+            <img
+              className="profile__avatar"
+              src="https://place-hold.it/150x150x"
+              alt="user avatar"
+            />
+            <div className="profile__data">
+              <p className="profile__user">Użytkownik: {authUser.username}</p>
+              <p className="profile__user">E-mail: {authUser.email}</p> <br/>
+              <PasswordChangeForm />
+            </div>
+          </div>
+        </div>
       </>
     )}
   </AuthUserContext.Consumer>
