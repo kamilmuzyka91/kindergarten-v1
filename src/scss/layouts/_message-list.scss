@@ -1,6 +1,12 @@
-.messageList {
-  background: red;
+.message__list {
   display: flex;
   flex-direction: column;
-  text-align-last: justify;
+  text-align: left;
+  max-width: 550px;
+  & {
+    background: $desktop-hover-bg;
+  }
+  .message__item {
+    max-width: 550px;
+  }
 }

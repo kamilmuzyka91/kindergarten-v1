@@ -3,8 +3,8 @@ import React from "react";
 import MessageItem from "./MessageItem";
 
 const MessageList = ({ messages, onEditMessage, onRemoveMessage }) => (
-  <ul>
-    <li className="messageList">
+  <ul className="message__list">
+    <li className="message__item">
       {messages.map((message) => (
         <li>
           {" "}
@@ -14,6 +14,7 @@ const MessageList = ({ messages, onEditMessage, onRemoveMessage }) => (
             onEditMessage={onEditMessage}
             onRemoveMessage={onRemoveMessage}
           />
+          <hr />
         </li>
       ))}
     </li>

@@ -18,13 +18,15 @@
   background: rgb(178, 61, 207);
 }
 
-.user_message {
-  border: 2px solid grey;
-  color: white;
+.input__message {
+  
+  .user_message {
+    border: 2px solid grey;
+    color: $dark-grey;
 
-  .user_name {
-    text-transform: uppercase;
-    color: goldenrod;
-    font-weight: bolder;
+    .user_name {
+      color: $form-color;
+      font-weight: bolder;
+    }
   }
 }

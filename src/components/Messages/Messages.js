@@ -92,7 +92,7 @@ class Messages extends Component {
     return (
       <AuthUserContext.Consumer>
         {(authUser) => (
-          <div>
+          <div className="chat">
             {!loading && messages && (
               <button
                 className="btn_show_older_message"
@@ -118,7 +118,7 @@ class Messages extends Component {
               />
             )}
 
-            {!messages && <div className="chat_title">Zacznij czat...</div>}
+            {!messages && <div className="chat_title">Zostaw wiadomość</div>}
 
             <form
               className="form_chatBox"
@@ -130,7 +130,7 @@ class Messages extends Component {
                 value={text}
                 onChange={this.onChangeText}
               />
-              <button className="send_message" type="submit">
+              <button className="btn__send__message" type="submit">
                 Wyślij
               </button>
             </form>
