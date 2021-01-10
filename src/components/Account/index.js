@@ -14,7 +14,9 @@ const AccountPage = () => (
       <>
         <Navigation />
         <section className="user__profile ">
+
           <div className="profile__container">
+          api pogodowe
             <img
               className="profile__avatar"
               src="https://place-hold.it/150x150x"

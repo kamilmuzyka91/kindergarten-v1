@@ -1,5 +1,21 @@
 # Kindergarten v1
-App for teacher in kindergarten
 
-https://unsplash.com/  free images and photos
-https://tinypng.com/ PNG and JPEG images optimized
+# App for teacher in kindergarten
+
+Images are optimized in https://tinypng.com/
+
+I used free images from https://unsplash.com/
+
+react-create-app
+
+react-router-dom
+
+Firebase realtime database, auth
+
+Style w SASS
+
+google callendar
+
+Icon from https://fontawesome.com/
+
+Font from https://fontawesome.com/
