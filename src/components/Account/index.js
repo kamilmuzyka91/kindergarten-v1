@@ -7,6 +7,7 @@ import {
 } from "../Session";
 import { compose } from "recompose";
 import Navigation from "../Navigation";
+import Weather from "../Weather-api";
 
 const AccountPage = () => (
   <AuthUserContext.Consumer>
@@ -14,9 +15,7 @@ const AccountPage = () => (
       <>
         <Navigation />
         <section className="user__profile ">
-
           <div className="profile__container">
-          
             <img
               className="profile__avatar"
               src="https://place-hold.it/150x150x"
@@ -28,13 +27,15 @@ const AccountPage = () => (
               <PasswordChangeForm />
             </div>
           </div>
+          <div className="weather__check">
+                <Weather />
+              </div>
         </section>
       </>
     )}
   </AuthUserContext.Consumer>
 );
 
-// to samo co w homePage
 const condition = (authUser) => !!authUser;
 
 export default compose(

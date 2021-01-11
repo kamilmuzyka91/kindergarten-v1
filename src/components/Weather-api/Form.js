@@ -2,15 +2,19 @@ import React from "react";
 
 const Form = (props) => {
   return (
-    <form onSubmit={props.submit}>
-      <input
-        type="text"
-        value={props.value}
-        placeholder="wpisz miasto"
-        onChange={props.change}
-      />
-      <button>Wyszukaj mista</button>
-    </form>
+    <section className="weather">
+      {" "}
+      <form onSubmit={props.submit}>
+        <i className="weather-icon fas fa-temperature-low"></i>
+        <input
+          type="text"
+          value={props.value}
+          placeholder="wpisz miasto"
+          onChange={props.change}
+        />
+        <button>Sprawdź pogodę</button>
+      </form>
+    </section>
   );
 };
 
