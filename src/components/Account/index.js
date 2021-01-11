@@ -27,9 +27,8 @@ const AccountPage = () => (
               <PasswordChangeForm />
             </div>
           </div>
-          <div className="weather__check">
-                <Weather />
-              </div>
+
+          <Weather />
         </section>
       </>
     )}

@@ -16,14 +16,11 @@ const Result = (props) => {
   let content = null;
 
   if (!error && city) {
-    // czas pobrany z API jako sunrise/set jest w milisekundach od czasu uniksowego
-    // metoda toLocaleTimeString() utworzy z niego prawidłową godzinę w formacie HH:MM:SS
-
     const sunriseTime = new Date(sunrise * 1000).toLocaleTimeString();
     const sunSetTime = new Date(sunset * 1000).toLocaleTimeString();
 
     content = (
-      <article className="if">
+      <article className="search__results">
         <p>
           Wyniki wyszukiwania dla miasta {city} na {date}
         </p>
@@ -39,20 +36,9 @@ const Result = (props) => {
 
   return (
     <section className="weather">
-      {/* {error ? true : false} - struktura operatora trójargumentowego */}
-      {/* content na początku jest zapiany w zmiennej jako null, a co ma się dziać wyznacza 
-      instrukcja warunkowa if czyli: jeżeli error jest false oraz city nie jest "pusty string" nadpisz
-      zmienną content i wstaw tam np div'a .... lub coś innego 
-      zmienną content można nadpisać ponieważ jest to zmienna let nie const  */}
       {error ? `Nie znaleziono ${city}, sprawdź nazwę miasta` : content} <br />
     </section>
   );
 };
 
 export default Result;
-
-// lub:
-
-// const Result = ({ ...props }) => {
-//   return <div className="">{String(props.weather.error)}</div>;
-// };

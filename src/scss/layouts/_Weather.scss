@@ -1,0 +1,44 @@
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $kindergarten-color;
+
+  @include desktop {
+    @include center;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+
+    input {
+      border: 1px solid #000;
+      //   border-radius: 5px;
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid $form-color;
+      & {
+        color: #000;
+      }
+      &::placeholder {
+        font-style: italic;
+        color: #000;
+      }
+    }
+    button {
+      background: $form-color;
+      border: none;
+      border-radius: 3px;
+      margin-left: 1rem;
+      padding: 5px 30px;
+    }
+  }
+
+  .weather-icon {
+    font-size: 2rem;
+    color: $form-color;
+    margin-right: 1rem;
+  }
+}

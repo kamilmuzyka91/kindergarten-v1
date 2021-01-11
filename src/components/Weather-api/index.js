@@ -65,14 +65,14 @@ class Weather extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Form
           value={this.state.value}
           change={this.handleInputChange}
           submit={this.handleCitySubmit}
         />
         <Result weather={this.state} />
-      </div>
+      </>
     );
   }
 }

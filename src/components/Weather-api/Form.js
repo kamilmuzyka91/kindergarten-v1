@@ -3,7 +3,6 @@ import React from "react";
 const Form = (props) => {
   return (
     <section className="weather">
-      {" "}
       <form onSubmit={props.submit}>
         <i className="weather-icon fas fa-temperature-low"></i>
         <input
