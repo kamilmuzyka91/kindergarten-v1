@@ -1,23 +1,45 @@
-# Kindergarten v1
+# Acacia kindergarten App
 
-# App for teacher in kindergarten
+The application improves the work of teachers in kindergarten. It helps in communication and in sharing ideas.
 
-Images are optimized in https://tinypng.com/
+## How to use ?
 
-I used free images from https://unsplash.com/
+Chceck demo page: [demo](https://akacjowe.netlify.app/)
 
-react-create-app
+Register an account or use `TestAdminUser` account:
 
-react-router-dom
+- email: `rycerzerolanda@gmail.com`
+- password: `123456`
 
-Firebase realtime database, auth
+Or clone repo:
 
-RWD
+- first clone repo to Your machine `git clone`
+- run `npm i`
+- start dev server `npm start`
 
-Style w SASS
+Later you have to create the .env file in the root directory.
+Paste your Firebase configuration file there.
+Don't forget to add .env to .gitignore and
+good luck.
 
-google callendar
+!important - Application in development.
 
-Icon from https://fontawesome.com/
+## This App uses:
 
-Font from https://fontawesome.com/
+Project was bootstrapped with [Create React App](https://create-react-app.dev/docs/getting-started/)
+
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+
+- [Firebase: Realtime Database, Authentication](https://firebase.google.com/)
+
+- [Google Callendar](https://calendar.google.com/)
+
+- [SASS](https://www.npmjs.com/package/sass)
+
+- [Images are optimized in tinypng.com](https://tinypng.com/)
+
+- [I used free images from unsplash.com](https://unsplash.com/)
+
+- [Icon from fontawesome.com](https://fontawesome.com/)
+
+- [Font from fontawesome.com](https://fontawesome.com/)
