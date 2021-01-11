@@ -45,7 +45,7 @@ class MessageItem extends Component {
             <strong className="user_name">
               {message.user.username || message.user.userId}
             </strong>
-            {message.text} {message.editedAt && <span>(Edytowany)</span>}
+            {message.text} {message.editedAt && <span className="user_edit">(Edytowany)</span>}
           </span>
         )}
         <p>

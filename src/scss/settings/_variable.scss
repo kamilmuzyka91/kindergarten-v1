@@ -8,6 +8,15 @@ $article: (
   article-bg: #f2f2f2,
 );
 
+// live chat color
+$chat-colors: (rgb(255, 255, 255), rgb(240, 240, 240));
+@for $i from 1 through length($chat-colors) {
+  .user__item:nth-child(#{length($chat-colors)}n + #{$i}) {
+    background: nth($chat-colors, $i);
+    margin-bottom: 1rem;
+  }
+}
+
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Open Sans", sans-serif;
 

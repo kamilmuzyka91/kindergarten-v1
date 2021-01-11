@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Footer from "../Footer";
 import LandingPage from "../Landing";
 import SignInPage from "../SignIn";
 import SignUpPage from "../SignUp";
@@ -36,7 +35,6 @@ const App = () => (
     <Route path={ROUTES.ACCOUNT} component={AccountPage} />
     <Route path={ROUTES.CHAT} component={Chat} />
     <Route path={ROUTES.CALLENDAR} component={Callendar} />
-    <Footer />
   </Router>
 );
 

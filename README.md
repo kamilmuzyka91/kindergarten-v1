@@ -12,6 +12,8 @@ react-router-dom
 
 Firebase realtime database, auth
 
+RWD
+
 Style w SASS
 
 google callendar
