@@ -87,19 +87,6 @@ class SignUpFormBase extends Component {
       email === "" ||
       username === "";
 
-    // const logoDisplay = () => {
-    //   const logo = document.querySelector("logo");
-    //   const checkbox = document.querySelectorAll("checkbox");
-
-    //   if (checkbox.checked === true) {
-    //     logo.style.display = "none";
-    //   } else {
-    //     logo.style.display = "block";
-    //   }
-    // };
-    // https://stackoverflow.com/questions/51646324/how-to-change-style-using-javascript-in-reactjs
-    // ustaw metodę poprzez stan komponentu
-
     return (
       <form className="form" onSubmit={this.onSubmit}>
         <input

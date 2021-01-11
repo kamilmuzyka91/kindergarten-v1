@@ -14,9 +14,8 @@
     align-items: center;
 
     input {
-      border: 1px solid #000;
-      //   border-radius: 5px;
       text-align: center;
+      border: 1px solid #000;
       border: none;
       border-bottom: 1px solid $form-color;
       & {
@@ -31,8 +30,8 @@
       background: $form-color;
       border: none;
       border-radius: 3px;
-      margin-left: 1rem;
       padding: 5px 30px;
+      margin-left: 1rem;
     }
   }
 

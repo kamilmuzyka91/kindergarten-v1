@@ -4,6 +4,10 @@
   align-items: center;
   flex-direction: column;
 
+  @include desktop {
+    width: 30rem;
+  }
+
   .form {
     display: flex;
     justify-content: center;
@@ -13,11 +17,12 @@
     .logo {
       display: flex;
       align-self: center;
-      width: 70%;
-      height: 50%;
-      margin-top: 2rem;
       border-radius: 20px;
       box-shadow: 0px 0px 7px 1px rgba(255, 255, 255, 0.75);
+      margin-top: 2rem;
+      width: 70%;
+      height: 50%;
+
       @include tablet {
         width: 100%;
       }
@@ -25,18 +30,16 @@
         width: 70%;
       }
     }
-    @include desktop {
-      width: 30rem;
-    }
 
     .input__label {
-      border: none;
-      border-bottom: 1px solid black;
       text-align: center;
       color: $form-color;
+      border: none;
+      border-bottom: 1px solid black;
       padding: 5px;
       margin: 1.5rem;
       width: 100%;
+
       @include tablet {
         margin: 2rem;
         width: 150%;
@@ -46,24 +49,27 @@
       font-family: $primary-font;
       text-transform: uppercase;
       font-weight: bold;
-      background: $form-color;
       color: #000;
+      background: $form-color;
+      border: none;
       border-radius: 15px;
       padding: 0.6rem 4rem;
       margin: 15px 0;
-      border: none;
       width: 100%;
+
       @include tablet {
         border-radius: 10px;
         padding: 1rem 4rem;
         margin-bottom: 2rem;
         width: 200%;
       }
+
       @include desktop {
         cursor: pointer;
+        border-radius: 10px;
         padding: 1rem 4rem;
         margin-bottom: 3rem;
-        border-radius: 10px;
+
         &:hover {
           box-shadow: 0px 10px 13px -7px #10aded,
             0px 0px 19px 10px rgba(0, 0, 0, 0.25);

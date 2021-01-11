@@ -12,7 +12,6 @@ const Navigation = ({ authUser }) => (
       authUser ? (
         <NavigationAuth authUser={authUser} />
       ) : (
-        // ready to NavigationNonAuth
         <NavigationAuth authUser={authUser} />
       )
     }

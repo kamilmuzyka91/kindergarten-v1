@@ -6,9 +6,9 @@
   z-index: 3;
 
   @include desktop {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    background: $desktop-nav-bg;
     position: static;
+    background: $desktop-nav-bg;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     height: 5rem;
   }
 
@@ -27,28 +27,24 @@
     color: $mobile-link;
     text-align: center;
     background: $mobile-menu;
-
     list-style: none;
     overflow: hidden;
-    max-height: 0;
     transition: max-height 0.3s ease-out;
     margin: 0;
     padding: 0;
+    max-height: 0;
 
     @include desktop {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-
-      margin: 0 auto;
-      background: $desktop-nav-bg;
-
       font-family: $primary-font;
       font-size: 1.2rem;
       font-weight: bold;
       color: $mobile-link;
-
+      background: $desktop-nav-bg;
+      margin: 0 auto;
       max-height: 5rem;
       max-width: 1300px;
     }
@@ -69,8 +65,8 @@
     font-weight: 600;
     color: $mobile-link;
     text-transform: uppercase;
-    letter-spacing: 0.1121rem;
     text-decoration: none;
+    letter-spacing: 0.1121rem;
 
     border-bottom: 4px solid transparent;
     padding: 1rem;

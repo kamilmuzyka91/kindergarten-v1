@@ -15,19 +15,19 @@
 
     .lerning_tiles {
       @include desktop {
-        width: 45%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        width: 45%;
       }
     }
     article {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
-      margin: 5px;
       background: map-get($article, articzle-bg);
+      margin: 5px;
+      width: 100%;
 
       @include desktop {
         background: map-get($article, article-bg);

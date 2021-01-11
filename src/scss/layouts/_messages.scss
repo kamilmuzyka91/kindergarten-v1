@@ -5,11 +5,11 @@
   max-width: 550px;
 
   .btn_show_older_message {
-    padding: 5px;
     border: none;
     background: yellowgreen;
-    width: 100%;
+    padding: 5px;
     margin-bottom: 1rem;
+    width: 100%;
   }
   .load_older_message {
     color: $form-color;
@@ -28,18 +28,18 @@
     .input_message {
       font-size: larger;
       color: $dark-grey;
+      text-align: center;
       background: #bbbbbb;
       border: none;
       padding: 5px;
       margin-right: 3px;
       width: 100%;
-      text-align: center;
     }
 
     .btn__send__message {
       padding: 5px 30px;
-      border: none;
       background: #10aded;
+      border: none;
     }
   }
 }

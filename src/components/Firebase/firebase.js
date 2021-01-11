@@ -89,13 +89,3 @@ class Firebase {
 }
 
 export default Firebase;
-
-// Ścieżki w metodzie ref () odpowiadają lokalizacji, w której Twoje encje (użytkownicy) będą przechowywane
-//  w interfejsie API bazy danych czasu rzeczywistego Firebase. Jeśli usuniesz użytkownika
-//   pod adresem „users / 5”, użytkownik o identyfikatorze 5 zostanie usunięty z bazy danych.
-//    Jeśli utworzysz nowego użytkownika w grupie „Użytkownicy”, Firebase utworzy identyfikator
-//     za Ciebie i przypisze wszystkie przekazane mu informacje. Ścieżki są zgodne
-//     z filozofią REST, w której każda jednostka (np. Użytkownik, wiadomość, książka, autor)
-//     jest powiązana z identyfikatorem URI, a metody HTTP służą do tworzenia, aktualizowania,
-//      usuwania i pobierania jednostek. W Firebase RESTful URI staje się prostą ścieżką,
-//  a metody HTTP stają się interfejsem API Firebase.

@@ -2,16 +2,17 @@
   font-family: $primary-font;
   text-transform: uppercase;
   font-weight: bold;
-  color: $mobile-link;
-  padding: 0.3rem 1rem;
   border: 1px solid $mobile-link;
   border-radius: 15px;
+  color: $mobile-link;
+  padding: 0.3rem 1rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
 
   @include desktop {
     display: block;
     margin-bottom: 0;
+    
     &:hover {
       color: red;
     }

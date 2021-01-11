@@ -68,7 +68,6 @@ class SignInFormBase extends Component {
           placeholder="akacjowe@przedszkole.pl"
         />
         <br />
-        {/* <p className="input__name"> Hasło:</p> */}
         <input
           className="input__label"
           name="password"
