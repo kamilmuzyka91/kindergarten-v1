@@ -87,5 +87,6 @@ class Firebase {
 
   messages = () => this.db.ref("messages");
 }
+const storage = Firebase.storage();
 
-export default Firebase;
+export { storage, Firebase as default };
